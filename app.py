@@ -9,7 +9,7 @@ import uvicorn
 app = FastAPI()
 
 # Config
-LLAMA_SERVER_URL = os.environ.get("LLAMA_SERVER_URL", "http://llama-server:8080")
+LLAMA_SERVER_URL = os.environ.get("LLAMA_SERVER_URL", "http://llama-serving:8080")
 
 # Models
 class Message(BaseModel):
